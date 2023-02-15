@@ -71,8 +71,27 @@ let hogwarts = [
   },
 ];
 
+// task1:
+// write a program that will take the `hogwarts` array as input and display the names of the people who belong to the Gryffindor house.
+// - Use array destructuring to extract the values you need out of the array.
+
 for (let {firstName, lastName} of hogwarts) {
   if(house == 'Gryffindor') {
     console.log(`${firstName} ${lastName}`);
   }
 }
+
+
+// task2:
+//  write a program that will take the `hogwarts` array as input and display the names of teachers who have pets.
+// - Use array destructuring to extract the values you need out of the array.
+
+for (let {firstName, lastName, pet, occupation} of hogwarts) {
+ if(occupation === "Teacher" && pet !== "None" && pet !== "Plant") {
+  console.log(`${firstName} ${lastName}`);
+ }
+}
+
+
+
+
