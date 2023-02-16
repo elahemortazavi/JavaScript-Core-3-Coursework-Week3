@@ -7,16 +7,16 @@ let order = [
   { itemName: "Hash Brown", quantity: 4, unitPrice: 0.4 },
 ];
 
-// Loop through each item in the order and log it to the console
+// Loop through each item in the order and log it to the console:
 for (const item of order) {
   const { itemName, quantity, unitPrice } = item;
   console.log(`${itemName} - $${(quantity * unitPrice).toFixed(2)}`);
 }
 
-// Calculate the total cost of the order
+// Calculate the total cost of the order:
 const total = order.reduce((acc, item) => {
   return acc + item.quantity * item.unitPrice;
 }, 0);
 
-// Log the total cost of the order to the console
+// Log the total cost of the order to the console:
 console.log(`Total: $${total.toFixed(2)}`);
