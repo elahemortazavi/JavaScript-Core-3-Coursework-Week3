@@ -13,19 +13,20 @@ let order = [
   { itemName: "Hash Brown", quantity: 4, unitPrice: 0.4 },
 ];
 
+// first solution:
 // Loop through each item in the order and log it to the console:
-for (const item of order) {
-  const { itemName, quantity, unitPrice } = item;
-  console.log(`${itemName} - $${(quantity * unitPrice).toFixed(2)}`);
-}
+// for (const item of order) {
+//   const { itemName, quantity, unitPrice } = item;
+//   console.log(`${itemName} - $${(quantity * unitPrice).toFixed(2)}`);
+// }
 
 // Calculate the total cost of the order:
-const total = order.reduce((acc, item) => {
-  return acc + item.quantity * item.unitPrice;
-}, 0);
+// const total = order.reduce((acc, item) => {
+//   return acc + item.quantity * item.unitPrice;
+// }, 0);
 
 // Log the total cost of the order to the console:
-console.log(`Total: $${total.toFixed(2)}`);
+// console.log(`Total: $${total.toFixed(2)}`);
 
 
 
@@ -33,18 +34,18 @@ console.log(`Total: $${total.toFixed(2)}`);
 
 
 // second solution:
-let totalCost = 0;
+// let totalCost = 0;
 
-console.log("Order Details:");
-for (let i = 0; i < order.length; i++) {
-  const itemTotal = order[i].quantity * order[i].unitPrice;
-  console.log(
-    `${order[i].itemName} x ${order[i].quantity} = $${itemTotal.toFixed(2)}`
-  );
-  totalCost += itemTotal;
-}
+// console.log("Order Details:");
+// for (let i = 0; i < order.length; i++) {
+//   const itemTotal = order[i].quantity * order[i].unitPrice;
+//   console.log(
+//     `${order[i].itemName} x ${order[i].quantity} = $${itemTotal.toFixed(2)}`
+//   );
+//   totalCost += itemTotal;
+// }
 
-console.log(`Total Cost: $${totalCost.toFixed(2)}`);
+// console.log(`Total Cost: $${totalCost.toFixed(2)}`);
 
 
 

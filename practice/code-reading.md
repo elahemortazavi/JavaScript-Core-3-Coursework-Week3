@@ -65,5 +65,6 @@ console.log(y);
 ```
 
 What will be the output of this code. Explain your answer in 50 words or less.
+
 '9' as the 'console.log' is outside the block in global area and has access to 'x=9'.
  for f2, {x:10} would be the result as y passed to f2.                                      
